@@ -18,7 +18,7 @@ doxygen doxy-ee.conf
 cd ../iop
 doxygen doxy-iop.conf
 cd ..
-doxygen doxy-main.conf
+doxygen doxy-index.conf
 ```
 # Location
 HTML documents will be located in ps2sdk-doc/html.  
