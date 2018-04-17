@@ -23,9 +23,7 @@ doxygen doxy-index.conf
 HTML documents will be located in docs/html.
 
 # TODO
- - Change ps2sdk's function macros to support doxygen
  - Add doxygen commands to assembly files so they parse correctly
- - Increase GRAPH_MAX_NODES
  - Add descriptions of ee sublibraries to ee.md
  - Add descriptions of iop sublibraries to iop.md
  - Flesh out index.md

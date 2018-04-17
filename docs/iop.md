@@ -1,4 +1,2 @@
-IOP Index {#mainpage}
-=========
- *  [Index](../index.html)
+ *  [Main Page](../index.html)
  *  [EE](../ee/index.html)
