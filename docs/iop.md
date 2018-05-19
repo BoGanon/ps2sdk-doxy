@@ -1,27 +1,28 @@
+@mainpage IOP Input/Output Processor
+
 [TOC]
 
-Input/Output Processor Libraries {#ioplibraries}
-========================
+@section iop_lib IOP Libraries
+The libraries that come with ps2sdk for the IOP.
 
-Name                      | Function
-------------------------- | --------
-@ref iopdebug "debug"     | Debug libraries
-@ref iopdev9 "dev9"       | Dev9 libraries
-@ref iopfs "fs"           | Filesystem libraries
-@ref iophdd "hdd"         | HDD libraries
-@ref iopiLink "iLink"     | iLink libraries
-kernel                    | The IOP kernel library
-@ref iopmc "memorycard"   | Memorycard libraries
-@ref iopnetwork "network" | Network libraries
-@ref iopsound "sound"     | Sound libraries
-@ref iopsystem "system"   | System libraries
-@ref ioptcpip "tcpip"     | TCPIP libraries
-@ref iopusb "usb"         | USB libraries
+Name        | Function
+----------- | --------
+debug       | Debug libraries
+dev9        | Dev9 libraries
+fs          | Filesystem libraries
+hdd         | HDD libraries
+iLink       | iLink libraries
+kernel      | The IOP kernel
+memorycard  | Memorycard libraries
+network     | Network libraries
+sound       | Sound libraries
+system      | System libraries
+tcpip       | TCPIP libraries
+usb         | USB libraries
 
----
 
-Debug {#iopdebug}
-=====
+@subsection iop_debug Debug
+Libraries that can be used for debugging.
 
 Name        | Function
 ----------- | --------
@@ -30,36 +31,30 @@ iop_sbusdbg | IOP debugging over SBUS tty
 ioptrap     | IOP exception handling
 sior        | IOP serial I/O
 
----
+@subsection iop_dev9 DEV9
+Libraries that utilize the DEV9 expansion port.
 
-Dev9 {#iopdev9}
-====
+Name        | Function
+----------- | --------
+atad        | ATA device driver
+dev9        | Dev9 device driver
+extflash    | External Flash Rom driver
+hdpro_atad  | HD Pro Kit ATA device driver
+poweroff    | Poweroff handling
 
-Name       | Function
----------- | --------
-atad       | ATA Device Driver
-dev9       | Dev9 Device Driver
-extflash   | External Flash Rom Driver
-hdpro_atad | HD Pro Kit ATA Device Driver
-poweroff   | Poweroff handling
 
----
+@subsection iop_fs Filesystems
+Libraries for filesystem handling.
 
-Filesystem {#iopfs}
-==========
+Name        | Function
+----------- | --------
+devfs       | devfs: filesystem driver
+filexio     | fileXio server side
+http        | http: client file driver
+netfs       | TCP filesystem server for network clients
 
-Name     | Function
--------- | --------
-devfs    | devfs: filesystem driver
-fakehost | Redirects a path to a fake host: device
-filexio  | fileXio server side
-http     | http: client file driver
-netfs    | TCP server for network clients
-
----
-
-HDD {#iophdd}
-===
+@subsection iop_hdd HDD
+Libraries that provide Hard Disk Drive functionality.
 
 Name    | Function
 ------- | --------
@@ -70,30 +65,24 @@ libpfs  | pfs library
 pfs     | pfs driver
 pfs-osd | OSD version of pfs driver
 
----
-
-iLink {#iopiLink}
-=====
+@subsection iop_ilink iLink
+Libraries that utilize the iLink interface.
 
 Name          | Function
 ------------- | --------
 IEEE1394_disk | SBP-2 over IEEE1394 driver. See README for more information.
 iLinkman      | iLink port driver. See README for more information.
 
----
-
-Memorycard {#iopmc}
-==========
+@subsection iop_mc Memory Card
+Libraries that provide memory card functionality.
 
 Name   | Function
 ------ | --------
-mcman  | Memory card manager
+mcman  | Memory card filesystem manager
 mcserv | Memory card RPC server
 
----
-
-Network {#iopnetwork}
-=======
+@subsection iop_network Network
+Libraries that provide network functionality.
 
 Name   | Function
 ------ | --------
@@ -102,8 +91,8 @@ smap   | Ethernet interface driver
 smbman | SMB protocol driver
 udptty | TTY output driver over ethernet
 
-Sound {#iopsound}
-=====
+@subsection iop_sound Sound
+Libraries that provide sound playback functionality.
 
 Name   | Function
 ------ | --------
@@ -113,14 +102,12 @@ freesd | LIBSD compatible sound driver (now libsd)
 libsd  | LIBSD compatible sound driver
 ps2snd | IOP sound driver for libsd
 
----
-
-System {#iopsystem}
-======
+@subsection iop_system System
+Libraries that provide system or device functionality.
 
 Name     | Function
 -------- | --------
-alloc    | Memory management for IOP
+alloc    | Memory management for the IOP
 freemtap | Multitap driver (now mtapman)
 freepad  | Controller driver (now padman)
 freesio2 | XSIO2MAN replacement driver (now sio2man)
@@ -137,10 +124,9 @@ siftoo   | SIF2 library
 sio2log  | XSIO2MAN replacement driver with logging
 sio2man  | XSIO2MAN replacement driver
 
----
 
-TCPIP {#ioptcpip}
-=====
+@subsection iop_tcpip TCPIP
+Libraries that provide a TCP/IP stack on the IOP.
 
 Name         | Function
 ------------ | --------
@@ -149,10 +135,8 @@ tcpip-base   | TCPIP base library
 tcpip-netman | TCPIP protocol stack library
 tcpips       | RPC server for TCPIP protocol
 
----
-
-USB  {#iopusb}
-===
+@subsection iop_usb USB
+Libraries that provide USB functionality.
 
 Name     | Function
 -------- | --------
@@ -161,6 +145,4 @@ keyboard | USB keyboard driver
 mouse    | USB mouse driver
 usbd     | USB protocol driver
 usbhdfsd | USB mass storage driver
-
----
 
