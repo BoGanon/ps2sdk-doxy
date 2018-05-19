@@ -4,21 +4,22 @@
   <navindex>
     <tab type="user" url="../index.html" title="Main Page"/>
     <tab type="user" url="../ee/index.html" title="EE"/>
-    <tab type="user" url="index.html" title="IOP"/>
-    <tab type="mainpage" visible="no" title=""/>
-    <tab type="pages" visible="no" title="" intro=""/>
-    <tab type="modules" visible="yes" title="" intro=""/>
+    <tab type="mainpage" visible="yes" title="IOP"/>
+    <tab type="modules" visible="yes" title="IOP Docs" intro="Documented libraries on the IOP."/>
+    <tab type="user" url="bug.html" title="IOP Bugs"/>
+    <tab type="user" url="todo.html" title="IOP TODO"/>
+    <tab type="pages" visible="no" title="" intro="IOP Pages"/>
     <tab type="namespaces" visible="yes" title="">
       <tab type="namespacelist" visible="yes" title="" intro=""/>
       <tab type="namespacemembers" visible="yes" title="" intro=""/>
     </tab>
-    <tab type="classes" visible="yes" title="">
+    <tab type="classes" visible="yes" title="IOP Data Structures">
       <tab type="classlist" visible="yes" title="" intro=""/>
       <tab type="classindex" visible="$ALPHABETICAL_INDEX" title=""/>
       <tab type="hierarchy" visible="yes" title="" intro=""/>
       <tab type="classmembers" visible="yes" title="" intro=""/>
     </tab>
-    <tab type="files" visible="yes" title="">
+    <tab type="files" visible="yes" title="IOP Files">
       <tab type="filelist" visible="yes" title="" intro=""/>
       <tab type="globals" visible="yes" title="" intro=""/>
     </tab>
@@ -149,11 +150,11 @@
       <files visible="yes" title=""/>
       <namespaces visible="yes" title=""/>
       <classes visible="yes" title=""/>
-      <defines title=""/>
       <typedefs title=""/>
+      <functions title=""/>
+      <defines title=""/>
       <enums title=""/>
       <enumvalues title=""/>
-      <functions title=""/>
       <variables title=""/>
       <signals title=""/>
       <publicslots title=""/>
